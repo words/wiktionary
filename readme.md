@@ -52,7 +52,24 @@ npm i -g wiktionary && wiktionary pomology
 or use [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
 
 ```sh
-npx wiktionary pomology
+$ npx wiktionary zymology
+npx: installed 62 in 4.301s
+English
+
+Alternative forms
+zumology (dated)
+Etymology
+From zymo- +‎ -logy.
+Noun
+zymology (uncountable)
+(zymurgy) A treatise on the fermentation of liquors, or the doctrine of fermentation.
+The science of or knowledge concerning fermentation.
+Translations
+
+
+References
+zymology in Webster’s Revised Unabridged Dictionary, G. & C. Merriam, 1913
+The Century Dictionary, The Century Co., New York, 1914
 ```
 
 ## Tests
