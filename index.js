@@ -24,7 +24,15 @@ async function lookup (query, locale = 'en') {
   const key = Object.keys(flat(body)).find(key => key.endsWith('.extract'))
   if (!key) return null // 404 word not found
   const html = getProp(body, key)
-  const text = cheerio.load(html).text().trim()
+  const text = cheerio.load(html).text()
+    .trim() // remove extra whitespace and newlines
+    .replace('English\n', '')
+    .replace('Noun\n', '')
+    .replace('Etymology\n', 'Etymology: ')
+    .replace('Translation\n', 'Translation: ')
+    .replace('Anagrams\n', 'Anagrams: ')
+    .replace(/\n+/gm, '\n') // duplicate newlines
+    .replace(/\n/gm, '; ')
   return {query, html, text}
 }
 

@@ -10,8 +10,8 @@ test('happy path for a known word', async () => {
   expect(result.html.includes('<p>')).toBe(true)
   expect(result.text.includes('<p>')).toBe(false)
 
-  // trims newlines
-  expect(result.text).toMatch(/^English/)
+  // trims newlines and extra stuff
+  expect(result.text).toMatch(/^Etymology: From Latin/)
 })
 
 test('unhappy path with a nonexistent term', async () => {
