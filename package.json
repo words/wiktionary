@@ -1,0 +1,20 @@
+{
+  "name": "wiktionary",
+  "description": "Look up words on wiktionary.org in English or any other language.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "flat": "^4.0.0",
+    "got": "^8.1.0",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "jest": "^22.3.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": "cli.js"
+}
