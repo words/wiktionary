@@ -2,7 +2,7 @@
   "name": "wiktionary",
   "description": "Look up words on wiktionary.org in English or any other language.",
   "repository": "https://github.com/words/wiktionary",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -12,10 +12,14 @@
     "lodash": "^4.17.5"
   },
   "devDependencies": {
-    "jest": "^22.3.0"
+    "jest": "^22.3.0",
+    "semantic-release": "^12.4.1",
+    "travis-deploy-once": "^4.3.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "bin": "cli.js"
 }
