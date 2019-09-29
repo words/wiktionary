@@ -16,6 +16,7 @@ async function lookup (query, locale = 'en') {
       action: 'query',
       format: 'json',
       prop: 'extracts',
+      origin: "*",
       titles: query
     }
   })
